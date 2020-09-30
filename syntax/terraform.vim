@@ -22,6 +22,7 @@ syn match terraBlockIntroduction /^\s*\zs\K\k*\ze\s\+\(\("\K\k*"\|\K\k*\)\s\+\)*
 syn keyword terraBlockType contained data locals module output provider resource terraform variable
 
 syn keyword terraValueBool true false on off yes no
+syn keyword terraKeyWord var local data
 
 syn keyword terraTodo         contained TODO FIXME XXX BUG TF-UPGRADE-TODO
 syn region  terraComment      start="/\*" end="\*/" contains=terraTodo,@Spell
@@ -55,6 +56,7 @@ hi def link terraTodo              Todo
 hi def link terraBraces            Delimiter
 hi def link terraBlockType         Structure
 hi def link terraValueBool         Boolean
+hi def link terraKeyWord           Statement
 hi def link terraValueDec          Number
 hi def link terraValueHexaDec      Number
 hi def link terraValueString       String
