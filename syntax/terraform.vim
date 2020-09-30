@@ -43,8 +43,8 @@ syn region terraHereDocText   start=/<<-\?\z([a-z0-9A-Z]\+\)/ end=/^\s*\z1/ cont
 syn match terraFunction "[a-z0-9]\+(\@="
 
 """ HCL2
-syn keyword terraRepeat         for in
-syn keyword terraConditional    if
+syn keyword terraRepeat         for in for_each
+syn keyword terraConditional    if dynamic
 syn keyword terraType           string bool number object tuple list map set any
 syn keyword terraValueNull      null
 
